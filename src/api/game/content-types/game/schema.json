@@ -53,6 +53,22 @@
       "relation": "oneToOne",
       "target": "api::banner.banner",
       "mappedBy": "game"
+    },
+    "Tags": {
+      "type": "string"
+    },
+    "VideoUrl": {
+      "type": "string"
+    },
+    "Screenshots": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
     }
   }
 }
